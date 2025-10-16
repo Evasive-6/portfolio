@@ -19,7 +19,6 @@ const Education = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
         >
           Education
         </motion.h2>
@@ -28,12 +27,15 @@ const Education = () => {
           {education.map((edu, index) => (
             <motion.div
               key={index}
-              className="bg-gray-800 rounded-lg p-8 hover:bg-gray-700 transition-colors"
+              className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-8 hover:from-gray-700 hover:to-gray-800 transition-all duration-300 border border-purple-500/20 hover:border-purple-400/40"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.02 }}
+              whileHover={{
+                scale: 1.02,
+                boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
+                borderColor: 'rgba(147, 51, 234, 0.5)'
+              }}
             >
               <div className="flex items-start gap-4">
                 <div className="bg-purple-600 p-3 rounded-full">
