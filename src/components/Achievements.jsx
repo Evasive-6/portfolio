@@ -43,7 +43,6 @@ const Achievements = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
         >
           Achievements & Interests
         </motion.h2>
@@ -52,12 +51,15 @@ const Achievements = () => {
           {achievements.map((achievement, index) => (
             <motion.div
               key={achievement.title}
-              className="bg-gray-900 rounded-lg p-6 text-center hover:bg-gray-800 transition-colors"
+              className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg p-6 text-center hover:from-gray-800 hover:to-gray-700 transition-all duration-300 border border-purple-500/20 hover:border-purple-400/40"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{
+                scale: 1.05,
+                boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
+                borderColor: 'rgba(147, 51, 234, 0.5)'
+              }}
             >
               <div className="bg-purple-600 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <achievement.icon className="text-white text-2xl" />
@@ -76,7 +78,6 @@ const Achievements = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
         >
           <h3 className="text-2xl font-bold text-white mb-6 text-center">Extracurricular Interests</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -87,7 +88,6 @@ const Achievements = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
               >
                 <p className="text-gray-300">{interest}</p>
               </motion.div>

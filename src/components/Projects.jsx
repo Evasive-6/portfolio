@@ -37,14 +37,13 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-black">
+    <section id="projects" className="py-20 bg-gradient-to-b from-gray-900 to-black">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
         >
           Projects
         </motion.h2>
@@ -57,7 +56,6 @@ const Projects = () => {
               initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              viewport={{ once: true }}
               whileHover={{ scale: 1.02 }}
             >
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
@@ -94,13 +92,20 @@ const Projects = () => {
               <div className="mb-6">
                 <h4 className="text-lg font-semibold text-white mb-3">Technologies Used:</h4>
                 <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech) => (
-                    <span
+                  {project.technologies.map((tech, index) => (
+                    <motion.span
                       key={tech}
-                      className="bg-purple-600 text-white px-3 py-1 rounded-full text-sm"
+                      className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3 py-1 rounded-full text-sm font-medium"
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: index * 0.1, duration: 0.3 }}
+                      whileHover={{
+                        scale: 1.1,
+                        boxShadow: '0 0 15px rgba(168, 85, 247, 0.4)'
+                      }}
                     >
                       {tech}
-                    </span>
+                    </motion.span>
                   ))}
                 </div>
               </div>
@@ -115,7 +120,6 @@ const Projects = () => {
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ delay: (index * 0.2) + (achIndex * 0.1) }}
-                      viewport={{ once: true }}
                     >
                       <span className="text-purple-400 mr-2">•</span>
                       {achievement}
