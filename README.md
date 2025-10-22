@@ -1,16 +1,105 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A scalable portfolio website built with React as a centralized hub showcasing my projects, skills, and experience for potential employers and companies.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[View Live Portfolio](https://albinshiju-portfolio.vercel.app/)
 
-## React Compiler
+## 📋 Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This personal portfolio website serves as a comprehensive showcase of my skills, projects, education, and achievements. Built with modern web technologies, it provides an interactive and responsive experience for visitors to explore my work and get in touch.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend Framework:** React 18
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** React Icons
+- **Particles:** TS Particles
+- **Deployment:** Vercel
+
+## ✨ Features
+
+- **Responsive Design:** Optimized for all device sizes
+- **Smooth Animations:** Powered by Framer Motion
+- **Interactive Background:** Particle effects using TS Particles
+- **Modern UI:** Clean and professional design
+- **Fast Performance:** Optimized with Vite
+- **SEO Friendly:** Proper meta tags and structure
+
+## 📁 Project Structure
+
+```
+portfolio/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Education.jsx
+│   │   ├── Achievements.jsx
+│   │   └── Footer.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── package.json
+├── vite.config.js
+└── tailwind.config.js
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/albinshiju/portfolio.git
+cd portfolio
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+## 📱 Sections
+
+- **Hero:** Introduction with animated background
+- **Skills:** Technical skills categorized by type
+- **Projects:** Showcase of key projects with details
+- **Education:** Academic background
+- **Achievements:** Certifications and accomplishments
+- **Contact:** Get in touch information
+
+## 🎨 Customization
+
+The website is highly customizable. You can modify:
+
+- Colors and themes in `tailwind.config.js`
+- Content in component files
+- Animations in Framer Motion components
+- Particle effects in the Hero section
+

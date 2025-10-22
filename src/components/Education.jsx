@@ -12,7 +12,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-20 bg-gray-900">
+    <section id="education" className="py-20 bg-gradient-to-br from-gray-900 via-indigo-900 to-purple-900">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent"
