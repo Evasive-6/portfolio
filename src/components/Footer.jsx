@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaPaperPlane } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaPaperPlane, FaCode } from 'react-icons/fa';
 import { useState } from 'react';
 
 const Footer = () => {
@@ -32,13 +32,14 @@ const Footer = () => {
   };
 
   const contactInfo = [
-    { icon: FaEnvelope, text: 'albinshiju@example.com', href: 'mailto:albinshiju@example.com' },
-    { icon: FaGithub, text: 'github.com/albinshiju', href: 'https://github.com/albinshiju' },
-    { icon: FaLinkedin, text: 'linkedin.com/in/albinshiju', href: 'https://linkedin.com/in/albinshiju' }
+    { icon: FaEnvelope, text: 'albinshiju285@gmail.com', href: 'mailto:albinshiju285@gmail.com' },
+    { icon: FaCode, text: 'LeetCode', href: 'https://leetcode.com/u/Albin_Shiju/' },
+    { icon: FaGithub, text: 'GitHub', href: 'https://github.com/Evasive-6' },
+    { icon: FaLinkedin, text: 'LinkedIn', href: 'https://www.linkedin.com/in/albin-shiju-b7b117361' }
   ];
 
   return (
-    <footer id="contact" className="bg-gradient-to-t from-gray-900 to-black py-16 border-t border-purple-500/20">
+    <footer id="contact" className="bg-gradient-to-t from-black via-purple-900 to-indigo-900 py-16 border-t border-purple-500/20">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-12"

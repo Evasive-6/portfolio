@@ -37,7 +37,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-b from-gray-900 to-black">
+    <section id="projects" className="py-20 bg-gradient-to-br from-indigo-900 via-purple-900 to-gray-900">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent"

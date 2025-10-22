@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Particles from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa';
-import backgroundImage from '../assets/OIP (3).jpg';
+import backgroundImage from '../assets/anime-purple-bg.gif';
 
 const Hero = () => {
   const [particlesLoaded, setParticlesLoaded] = useState(false);
@@ -89,7 +89,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <img src="backgroundImage" alt="bgImage" />
+      
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -173,8 +173,9 @@ const Hero = () => {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Skilled in building secure, scalable web applications with React, Node.js, and MongoDB.
-            Passionate about AI-powered solutions and system optimization.
+            Full-stack developer skilled in the MERN stack with hands-on experience building secure, scalable, and
+            deployable web applications. Proficient in designing RESTful APIs, implementing JWT
+            authentication, and integrating third-party services to deliver measurable, production-grade outcomes.
           </motion.p>
 
           <motion.div

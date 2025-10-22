@@ -16,32 +16,32 @@ const Skills = () => {
     {
       category: 'Frontend',
       color: 'from-green-500 to-emerald-500',
-      items: ['React.js', 'HTML5', 'CSS3', 'Tailwind CSS'],
-      details: 'Experienced in building responsive and interactive user interfaces with modern frameworks.'
+      items: ['React.js', 'HTML5', 'CSS3', 'Tailwind CSS', 'React Native'],
+      details: 'Experienced in building responsive and interactive user interfaces with modern frameworks, including mobile development.'
     },
     {
       category: 'Backend',
       color: 'from-purple-500 to-pink-500',
-      items: ['Node.js', 'Express.js'],
-      details: 'Skilled in server-side development and API creation using Node.js and Express.'
+      items: ['Node.js', 'Express.js', 'Django', 'Fast API'],
+      details: 'Skilled in server-side development and API creation using various frameworks including Node.js, Express, Django, and FastAPI.'
     },
     {
       category: 'Databases',
       color: 'from-orange-500 to-red-500',
-      items: ['MongoDB'],
-      details: 'Proficient in NoSQL database design and management with MongoDB.'
+      items: ['MongoDB', 'SQL'],
+      details: 'Proficient in both NoSQL and SQL database design and management.'
     },
     {
       category: 'Tools & Frameworks',
       color: 'from-indigo-500 to-purple-500',
-      items: ['Git & GitHub', 'Vercel', 'Netlify', 'Render', 'Postman', 'Bruno'],
-      details: 'Familiar with version control, deployment platforms, and API testing tools.'
+      items: ['Git & GitHub', 'Vercel', 'Netlify', 'Render', 'Postman', 'Bruno', 'Motion', 'Expo', 'Android Studio', 'Docker', 'Firebase'],
+      details: 'Familiar with version control, deployment platforms, API testing tools, animation libraries, mobile development tools, and containerization.'
     },
     {
       category: 'APIs',
       color: 'from-teal-500 to-blue-500',
-      items: ['Razorpay API'],
-      details: 'Experience integrating third-party payment APIs for secure transactions.'
+      items: ['Razorpay API', 'Gemini API'],
+      details: 'Experience integrating third-party payment APIs for secure transactions and AI APIs for intelligent features.'
     }
   ];
 
@@ -50,7 +50,7 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-20 bg-gray-900">
+    <section id="skills" className="py-20 bg-gradient-to-br from-purple-900 via-gray-900 to-indigo-900">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent"
@@ -93,19 +93,50 @@ const Skills = () => {
                 </motion.div>
               </div>
 
-              <ul className="text-gray-300 mb-4">
-                {skill.items.map((item, itemIndex) => (
-                  <motion.li
-                    key={item}
-                    className="mb-1"
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: (index * 0.1) + (itemIndex * 0.05) }}
-                  >
-                    • {item}
-                  </motion.li>
-                ))}
-              </ul>
+              {skill.category === 'Tools & Frameworks' ? (
+                <div className="text-gray-300 mb-4 grid grid-cols-2 gap-4">
+                  <ul>
+                    {skill.items.slice(0, 5).map((item, itemIndex) => (
+                      <motion.li
+                        key={item}
+                        className="mb-1"
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: (index * 0.1) + (itemIndex * 0.05) }}
+                      >
+                        • {item}
+                      </motion.li>
+                    ))}
+                  </ul>
+                  <ul>
+                    {skill.items.slice(5).map((item, itemIndex) => (
+                      <motion.li
+                        key={item}
+                        className="mb-1"
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: (index * 0.1) + ((itemIndex + 5) * 0.05) }}
+                      >
+                        • {item}
+                      </motion.li>
+                    ))}
+                  </ul>
+                </div>
+              ) : (
+                <ul className="text-gray-300 mb-4">
+                  {skill.items.map((item, itemIndex) => (
+                    <motion.li
+                      key={item}
+                      className="mb-1"
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: (index * 0.1) + (itemIndex * 0.05) }}
+                    >
+                      • {item}
+                    </motion.li>
+                  ))}
+                </ul>
+              )}
 
               <motion.div
                 initial={{ height: 0, opacity: 0 }}

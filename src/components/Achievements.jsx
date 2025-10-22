@@ -7,25 +7,35 @@ const Achievements = () => {
       title: 'LeetCode Challenge',
       description: 'Completed the "100 Days of LeetCode" challenge',
       icon: FaTrophy,
-      category: 'Coding'
+      category: 'Coding',
+      link: 'https://leetcode.com/u/Albin_Shiju/'
+    },
+    {
+      title: 'Smart India Hackathon',
+      description: 'Participated in the internal Smart India Hackathon, where my team was selected among the top 15 out of 400+ participating teams',
+      icon: FaTrophy,
+      category: 'Competition'
     },
     {
       title: 'REST API Certification',
       description: 'Intermediate level certification in REST API development',
       icon: FaCertificate,
-      category: 'Certification'
+      category: 'Certification',
+      link: 'https://www.hackerrank.com/certificates/iframe/00d673d426b4'
     },
     {
       title: 'Python Certification',
       description: 'Basic level certification in Python programming',
       icon: FaCertificate,
-      category: 'Certification'
+      category: 'Certification',
+      link: 'https://www.hackerrank.com/certificates/iframe/39444b94e821'
     },
     {
       title: 'Problem Solving Certification',
       description: 'Intermediate level certification in problem solving',
       icon: FaCertificate,
-      category: 'Certification'
+      category: 'Certification',
+      link: 'https://www.hackerrank.com/certificates/iframe/c48854b2da1b'
     }
   ];
 
@@ -36,7 +46,7 @@ const Achievements = () => {
   ];
 
   return (
-    <section id="achievements" className="py-20 bg-black">
+    <section id="achievements" className="py-20 bg-gradient-to-br from-gray-900 via-purple-900 to-black">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent"
@@ -51,7 +61,7 @@ const Achievements = () => {
           {achievements.map((achievement, index) => (
             <motion.div
               key={achievement.title}
-              className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg p-6 text-center hover:from-gray-800 hover:to-gray-700 transition-all duration-300 border border-purple-500/20 hover:border-purple-400/40"
+              className={`bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg p-6 text-center hover:from-gray-800 hover:to-gray-700 transition-all duration-300 border border-purple-500/20 hover:border-purple-400/40 ${achievement.link ? 'cursor-pointer' : ''}`}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
@@ -60,6 +70,7 @@ const Achievements = () => {
                 boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
                 borderColor: 'rgba(147, 51, 234, 0.5)'
               }}
+              onClick={() => achievement.link && window.open(achievement.link, '_blank')}
             >
               <div className="bg-purple-600 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <achievement.icon className="text-white text-2xl" />
