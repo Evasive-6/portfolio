@@ -194,7 +194,7 @@ const Hero = () => {
             </motion.a>
 
             <motion.a
-              href="https://github.com/albinshiju"
+              href="https://github.com/Evasive-6"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-gray-800 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-700 transition-colors"
@@ -205,7 +205,7 @@ const Hero = () => {
             </motion.a>
 
             <motion.a
-              href="https://linkedin.com/in/albinshiju"
+              href="www.linkedin.com/in/albin-shiju-b7b117361"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
