@@ -4,6 +4,37 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const Projects = () => {
   const projects = [
     {
+      title: 'TriviaSwift — Interactive Full‑Stack Quiz Platform',
+      description: 'TriviaSwift is an engaging, full-stack MERN trivia platform built for fast-paced and customizable quiz sessions. Users can test their knowledge across multiple categories and difficulties while competing in real time via a dynamic leaderboard and persistent multi-session state management.',
+      period: 'Recent – Ongoing',
+      technologies: ['React 19', 'Vite 7', 'Tailwind CSS v4', 'React Router DOM', 'Context API', 'Lucide React', 'Node.js', 'Express.js 4.21', 'MongoDB Atlas', 'Mongoose 7.8', 'JWT 9', 'bcryptjs 2.4'],
+      achievements: [
+        'Led a team of 7 developers in building a scalable MERN trivia platform with real-time gameplay and leaderboard',
+        'Architected backend API structure and implemented /api/game/start logic for instant question serving',
+        'Transitioned from static question sets to MongoDB dynamic querying with filtering algorithms',
+        'Achieved sub-millisecond API response times and optimized frontend re-renders using React Context',
+        'Implemented JWT-ready authentication and error-handling middleware for secure sessions',
+        'Directed QA and documentation standards, ensuring clear, professional documentation'
+      ],
+      github: '#',
+      live: '#'
+    },
+    {
+      title: 'Color Memory Challenge',
+      description: 'A fun and engaging mini game app built with Django backend and React Native + Expo frontend. Test your memory by repeating increasingly complex color sequences!',
+      period: 'Recent – Ongoing',
+      technologies: ['Django', 'Django REST Framework', 'SQLite', 'React Native', 'Expo', 'TypeScript', 'Tailwind CSS', 'NativeWind'],
+      achievements: [
+        'Developed a cross-platform mobile app deployable as APK with modern UI featuring gradients, animations, and smooth interactions',
+        'Implemented user authentication for saving progress and score tracking',
+        'Built responsive design ensuring seamless experience across devices',
+        'Created RESTful APIs for game management and score submission',
+        'Integrated Expo Router for efficient file-based routing in React Native'
+      ],
+      github: 'https://github.com/Evasive-6/Color-Memory-Challenge',
+      live: '#'
+    },
+    {
       title: 'Eva Esports',
       description: 'A full-stack esports tournament platform for players to register teams or join teams and compete in tournaments.',
       period: 'April 2025 – August 2025',
