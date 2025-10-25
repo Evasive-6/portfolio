@@ -16,8 +16,8 @@ const Projects = () => {
         'Implemented JWT-ready authentication and error-handling middleware for secure sessions',
         'Directed QA and documentation standards, ensuring clear, professional documentation'
       ],
-      github: '#',
-      live: '#'
+      github: 'https://github.com/Evasive-6/TriviaSwift',
+      live: 'https://trivia-swift.vercel.app/'
     },
     {
       title: 'Color Memory Challenge',
@@ -31,8 +31,8 @@ const Projects = () => {
         'Created RESTful APIs for game management and score submission',
         'Integrated Expo Router for efficient file-based routing in React Native'
       ],
-      github: 'https://github.com/Evasive-6/Color-Memory-Challenge',
-      live: '#'
+      github: 'https://github.com/Evasive-6/game',
+      live: 'https://expo.dev/accounts/eva1234/projects/frontend/builds/dafa94de-3340-464d-9a3b-e2af8deb2b78'
     },
     {
       title: 'Eva Esports',
@@ -45,8 +45,8 @@ const Projects = () => {
         'Designed robust backend schemas and logic to support 150+ teams and 50+ matches',
         'Enabled match tracking and scheduling admin operations'
       ],
-      github: 'https://github.com/albinshiju/eva-esports',
-      live: '#'
+      github: 'https://github.com/kalviumcommunity/S66_AlbinShiju_Capstone_EVA_Esports',
+      live: 'https://eesports.netlify.app/'
     },
     {
       title: 'Ecom Web',
@@ -62,7 +62,7 @@ const Projects = () => {
         'Engineered RESTful APIs for order processing, authentication, and admin operations',
         'Implemented optimistic UI updates on cart actions, improving perceived speed and user satisfaction'
       ],
-      github: 'https://github.com/albinshiju/ecom-web',
+      github: 'https://github.com/Evasive-6/ecom-web',
       live: '#'
     }
   ];
