@@ -4,6 +4,21 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const Projects = () => {
   const projects = [
     {
+      title: 'Muscle Cage — Fitness & Gym Membership Platform',
+      description: 'Muscle Cage is a modern fitness and gym membership web app built as a full-stack monorepo. It features a polished fitness landing experience, member authentication with protected dashboard access, and lead capture for contact and membership enquiry forms, all backed by a FastAPI + MongoDB API.',
+      period: 'Recent – Ongoing',
+      technologies: ['React 19', 'React Router', 'Tailwind CSS + custom UI primitives', 'FastAPI', 'Motor / MongoDB', 'JWT authentication', 'MongoDB Atlas or local MongoDB'],
+      achievements: [
+        'Built a full-stack gym membership platform with a polished landing page, auth flow, and members dashboard',
+        'Implemented secure JWT-based member authentication with register, login, and protected dashboard access',
+        'Developed FastAPI + MongoDB backend with endpoints for auth, contact leads, and membership enquiries',
+        'Engineered lead capture for contact and enquiry forms with MongoDB-backed persistence',
+        'Deployed the frontend and configured backend environment for production scaling'
+      ],
+      github: 'https://github.com/Evasive-6/MUSCLE-CAGE',
+      live: 'https://muscle-cage.vercel.app/'
+    },
+    {
       title: 'TriviaSwift — Interactive Full‑Stack Quiz Platform',
       description: 'TriviaSwift is an engaging, full-stack MERN trivia platform built for fast-paced and customizable quiz sessions. Users can test their knowledge across multiple categories and difficulties while competing in real time via a dynamic leaderboard and persistent multi-session state management.',
       period: 'Recent – Ongoing',
@@ -18,6 +33,21 @@ const Projects = () => {
       ],
       github: 'https://github.com/Evasive-6/TriviaSwift',
       live: 'https://trivia-swift.vercel.app/'
+    },
+    {
+      title: 'ClimaTech — Smart Agriculture Prediction System',
+      description: 'A data-driven web application that helps farmers predict crop prices, forecast demand, and assess weather risks. It combines price prediction (regression), demand forecasting (classification), and a weather risk classifier into an intuitive decision-support tool, all built on a well-organized data science pipeline.',
+      period: 'Recent – Ongoing',
+      technologies: ['Python', 'Machine Learning', 'Pandas', 'Regression', 'Classification', 'Flask', 'Jupyter', 'Plotly / Matplotlib'],
+      achievements: [
+        'Built a full data science pipeline covering data collection, cleaning, EDA, and preprocessing for crop, weather, and production datasets',
+        'Developed price prediction (regression) and demand forecasting (classification) ML models with evaluation against RMSE/MAE and accuracy',
+        'Integrated ML models into a web application with crop + location inputs and predicted price, demand level, and weather risk output',
+        'Maintained clean, reproducible project structure separating raw/processed data, notebooks, scripts, and outputs',
+        'Documented the project thoroughly to support collaboration and reproducibility across the team'
+      ],
+      github: 'https://github.com/kalviumcommunity/Squad66_03-26_ClimaTech_DataScience_Rift',
+      live: '#'
     },
     {
       title: 'Color Memory Challenge',
